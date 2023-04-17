@@ -1,0 +1,39 @@
+.preview-headings {
+    font-family: 'Dongle', sans-serif;
+    font-size: 5em;
+    /* color: aqua; */
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-headings {
+    font-family: 'Dongle', sans-serif;
+    font-size: 5em;
+    /* color: aqua; */
+    font-weight: bold;
+    text-align: center;
+}
+
+#fixedbutton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    color: aqua;
+    display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+    .preview-window {
+        display: none;
+    }
+    .splash-screen {
+        display: block;
+    }
+
+}
