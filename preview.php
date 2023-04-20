@@ -3,7 +3,7 @@
         <h4 class="display-4 preview-headings">Preview</h4>
         <div class="preview">
             <div class="" role="document">
-                <div class="shadow">
+                <div class="">
                     <div class="p-5">
                         <ul class="d-grid gap-4 my-5 list-unstyled small" id="product-list">
                         </ul>

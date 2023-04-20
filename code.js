@@ -11,16 +11,22 @@ function check(params) {
         console.log(element.innerHTML);
         if(index == 0)
         {
+          // skip id
         }
-        else if(index == 1)
+        else if(index == 1) {
+          product_list.innerHTML += `<li class="gap-4">
+                                    <div>
+                                    <img class="class="bi text-body-secondary" height="200" width="200" src=".` + element.innerHTML +`" alt="...">
+                                    </div></li>`
+        }
+        else if(index == 2)
         {
             product_list.innerHTML += `<li class="gap-4">
-                                    <img class="class="bi text-body-secondary"" src="./images/food.svg" alt="..."><br>
                                     <div>
                                         <h5 class="display-5 preview-headings">`+ element.innerHTML +`</h5>
                                     </div></li>`
         }
-        else if(index == 2)
+        else if(index == 3)
         {
             product_list.innerHTML += `<li class="gap-4">
                                     <div>
@@ -28,10 +34,19 @@ function check(params) {
                                         <p class="listing"> AUD `+ element.innerHTML +`</p>
                                     </div></li>`
         }
-        else 
+        else if(index == 4)
+        {
+          product_list.innerHTML += `<li class="gap-4">
+                                    <div>
+                                      <p class="bold">Unit Quantity</p> 
+                                        <p class="listing">`+ element.innerHTML +`</p>
+                                    </div></li>`
+        }
+        else if(index == 5)
         {
             product_list.innerHTML += `<li class="gap-4">
                                     <div>
+                                      <p class="bold">Amount in stock</p>
                                         <p class="listing">`+ element.innerHTML +`</p>
                                     </div></li>`
         }
