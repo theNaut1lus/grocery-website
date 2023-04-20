@@ -1,6 +1,6 @@
-<?php include 'header.php'; ?>
 <?php $id_pattern = '' ?>
 <?php include 'sql.php'; ?>
+<?php include 'header.php'; ?>
 <?php //include 'sidebar.php'; ?>
 <div class="col-8 d-flex flex-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
     <div class="list-group list-group-horizontal flex-wrap shadow">

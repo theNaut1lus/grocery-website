@@ -14,12 +14,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if (isset($search_pattern)) {
-    $sql = 'SELECT * FROM `products` where product_name like "%' . $search_pattern . '%" or unit_price like "%' . $search_pattern . '%"  order by product_id asc';
-} else {
-    $sql = 'SELECT * FROM `products` where product_id like "%' . $id_pattern . '%" order by product_id asc';
-}
-// $sql = 'SELECT * FROM `products` where product_id like "%' . $id_pattern . '%" order by product_id asc';
+
+// $sql = 'SELECT * FROM `cart`';
+$sql = 'SELECT a.product_name,a.unit_price,b.quantity FROM `products` as a join `cart` as b where a.product_id = b.product_id';
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -30,16 +27,6 @@ if ($result->num_rows > 0) {
     }
 } else {
     echo "0 results";
-}
-
-$notification_number = 0;
-
-$notif_sql = 'select sum(quantity) as count from `cart`';
-
-if ($notif_result = $conn->query($notif_sql)) {
-    while ($notif_row = $notif_result->fetch_assoc()) {
-        $notification_number = $notif_row['count'];
-    }
 }
 // echo '<pre>';
 // print_r($product_array);

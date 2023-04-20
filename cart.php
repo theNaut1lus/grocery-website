@@ -1,43 +1,43 @@
-<?php include 'header.php'; ?>
-<?php $id_pattern = '' ?>
-<?php include 'sql.php'; ?>
-<?php //include 'sidebar.php'; ?>
-<div class="col-12">
+<?php include 'cart-select.php'; ?>
+
+<?php include 'cart-update' ?>
+
+<div class="col-md-4 col-lg-3">
     <div class="row">
-        <div class="col-8">
-            <h1 class="display-4">Shopping Cart</h1>
-        </div>
-        <div class="col-4">
-            <button class="btn btn-success">Checkout</button>
-            <button class="btn btn-danger">Empty Cart</button>
+        <div class="col-12">
+            <h4 class="display-4 page-headings">Cart</h4>
         </div>
     </div>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Product Name</th>
-                <th scope="col">Unit Price</th>
-                <th scope="col">In Stock</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Update</th>
-                <th scope="col">Remove</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            foreach ($product_array as $product) {
-                echo '
+    <div class="row">
+        <table class="col-12 table table-striped table-hover cart-table">
+            <thead>
+                <tr>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Unit Price</th>
+                    <!-- <th scope="col">In Stock</th> -->
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($product_array as $product) {
+                    echo '
                         <tr>
                             <td>' . $product["product_name"] . '</td>
                             <td>' . $product["unit_price"] . '</td>
-                            <td>' . $product["in_stock"] . '</td>
-                            <td><input class="form-control" type="number" value="1"></td>
-                            <td><button class="btn btn-outline-primary">+</button></td>
-                            <td><button class="btn btn-outline-danger">X</button></td>
+                            <td><input class="form-control" type="number" value="' . $product["quantity"] . '"></td>
                         </tr>';
-            }
-            ?>
-        </tbody>
-    </table>
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-6 align-items-center">
+            <button class="btn btn-danger">Empty</button>
+        </div>
+        <div class="col-6 align-items-center">
+            <button class="btn btn-warning">Update</button>
+        </div>
+    </div>
 </div>
-<?php include 'footer.php'; ?>

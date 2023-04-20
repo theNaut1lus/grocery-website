@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
+    <link rel="shortcut icon" href="/IP/images/sales.gif" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,11 +64,22 @@
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            <?php echo $notification_number; ?>
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
                     </a>
                     <ul class="dropdown-menu text-small">
                         <li><a class="dropdown-item" href="#">View Profile</a></li>
-                        <li><a class="dropdown-item" href="/IP/cart.php">Cart</a></li>
-                        <li><a class="dropdown-item" href="/IP/checkout.php">Checkout</a></li>
+                        <li><a class="dropdown-item" href="/IP/cart-popout.php" target="popup" onclick='window.open("/IP/cart-popout.php","popup","width=600,height=600");
+                            return false;'>
+                                Cart
+                            </a></li>
+                        <li><a class="dropdown-item" href="/IP/checkout_now.php">Checkout</a></li>
+                        <li><a class="dropdown-item">
+                                Cart
+                            </a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
