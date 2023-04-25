@@ -26,7 +26,7 @@
                     </div>
                     <small class="opacity-50 text-nowrap"> AUD ' . $product["unit_price"] . '</small>
                     <div>
-                        <button class="btn btn-light rounded-pill px-3" type="button"><img src="./images/cart.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"></button>
+                        <button class="btn btn-light rounded-pill px-3" type="button" onclick="addToCart(this)"><img src="./images/cart.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"></button>
                     </div>
                 </div>
             </a>';

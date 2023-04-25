@@ -54,6 +54,12 @@ function check(params) {
     document.getElementById('cart-button').disabled = false;
 }
 
+function addToCart(params) {
+  notification = document.getElementById('notification-number');
+  notification.innerHTML = parseInt(notification.innerHTML) + 1;
+  console.log(notification.innerHTML);
+}
+
 // JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
