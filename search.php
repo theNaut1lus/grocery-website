@@ -1,30 +1,24 @@
-<?php $search_pattern = $_POST["search_pattern"]; ?>
-<?php $id_pattern = '' ?>
-<?php include 'sql.php'; ?>
 <?php include 'header.php'; ?>
+<?php $search_pattern = $_POST["search_pattern"]; ?>
+<?php include 'sql.php'; ?>
 <?php //include 'sidebar.php'; ?>
-<div class="col-8 d-flex flex-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-    <div class="list-group list-group-horizontal flex-wrap shadow">
-        <h4 class="display-4 page-headings px-4">Search Results</h4>
+<?php //echo $sql; ?>
+<div class="col-10 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+    <div class="list-group">
+        <h3 class="display-3">Search Results</h3>
         <?php
         foreach ($product_array as $product) {
             // echo $product["product_id"];
             // echo "<br>";
             echo '
-            <a href="#product-list" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" onclick="check(this)">  
-                <small style="display:none">' . $product["product_id"] . '</small>
-                <small style="display:none">' . $product["image_index"] . '</small>  
-                <small style="display:none">' . $product["product_name"] . '</small>
-                <small style="display:none">' . $product["unit_price"] . '</small>
-                <small style="display:none">' . $product["unit_quantity"] . '</small>
-                <small style="display:none">' . $product["in_stock"] . '</small>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                 <div class="d-flex gap-2 w-100 justify-content-between px-3">
-                    <img src=".' . $product["image_index"] . '" alt="twbs" width="60" height="60" class="flex-shrink-0">
+                    <img src="./images/food.svg" alt="twbs" width="48" height="48" class="rounded-circle flex-shrink-0">
                     <div>
                         <h6 class="mb-0">' . $product["product_name"] . '</h6>
-                        <p class="mb-0 opacity-25"> Quantity: ' . $product["unit_quantity"] . '</p>
+                        <p class="mb-0 opacity-25"> Inventory: ' . $product["in_stock"] . '</p>
                     </div>
-                    <small class="opacity-50 text-nowrap"> AUD ' . $product["unit_price"] . '</small>
+                    <small class="opacity-50 text-nowrap"> AUD' . $product["unit_price"] . '</small>
                     <div>
                         <button class="btn btn-light rounded-pill px-3" type="button"><img src="./images/cart.svg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0"></button>
                     </div>
@@ -34,12 +28,5 @@
         ?>
     </div>
 </div>
-<?php include 'preview.php'; ?>
-<div class="row">
-    <div class="col">
-        <p><a href="/IP/"
-                class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Return to
-                home</a></p>
-    </div>
-</div>
+
 <?php include 'footer.php'; ?>

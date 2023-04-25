@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <link rel="stylesheet" href="/IP/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,11 +40,11 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="/IP/pages/frozen.php">Frozen Food</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/fresh.php">Fresh Food</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/bevs.php">Beverges</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/health.php">Home Health</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/pet.php">Pet Food</a></li>
+                                <li><a class="dropdown-item" href="./pages/frozen.php">Frozen Food</a></li>
+                                <li><a class="dropdown-item" href="./pages/fresh.php">Fresh Food</a></li>
+                                <li><a class="dropdown-item" href="./pages/bevs.php">Beverges</a></li>
+                                <li><a class="dropdown-item" href="./pages/health.php">Home Health</a></li>
+                                <li><a class="dropdown-item" href="./pages/pet.php">Pet Food</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -70,11 +70,16 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">View Profile</a></li>
                         <li><a class="dropdown-item" href="/IP/cart-popout.php" target="popup" onclick='window.open("/IP/cart-popout.php","popup","width=600,height=600");
                             return false;'>
                                 Cart
                             </a></li>
                         <li><a class="dropdown-item" href="/IP/checkout_now.php">Checkout</a></li>
+                        <li><a class="dropdown-item">
+                                Cart
+                            </a>
+                        </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
