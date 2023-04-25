@@ -1,4 +1,9 @@
 <?php
+if ($id_pattern) {
+    // do nothing
+} else {
+    $id_pattern = '';
+}
 
 $product_array = array();
 $servername = "localhost";

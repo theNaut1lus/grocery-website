@@ -1,3 +1,4 @@
+<?php $id_pattern = ''; ?>
 <?php include 'sql.php'; ?>
 <?php include 'header.php'; ?>
 
@@ -174,7 +175,7 @@
 
                         <hr class="my-4">
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Checkout</button>
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
                     </form>
                 </div>
                 <?php include 'cart.php'; ?>
