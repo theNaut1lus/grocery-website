@@ -159,3 +159,6 @@
     </header>
     <div class="container">
         <div class="row">
+            <small class="opacity-50">Total:
+                <?php echo $count ?> Products
+            </small>

@@ -1,4 +1,7 @@
 <?php
+
+$count = 0;
+
 if ($id_pattern) {
     // do nothing
 } else {
@@ -33,6 +36,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         // echo "id: " . $row["product_id"] . " - Name: " . $row["product_name"] . " " . $row["unit_price"] . " " . $row["image_index"] . "<br>";
         array_push($product_array, $row);
+        $count++;
     }
 } else {
     echo "0 results";
@@ -51,4 +55,5 @@ if ($notif_result = $conn->query($notif_sql)) {
 // print_r($product_array);
 // echo '</pre>';
 $conn->close();
+// echo $count;
 ?>
