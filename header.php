@@ -40,11 +40,83 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="/IP/pages/frozen.php">Frozen Food</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/fresh.php">Fresh Food</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/bevs.php">Beverges</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/health.php">Home Health</a></li>
-                                <li><a class="dropdown-item" href="/IP/pages/pet.php">Pet Food</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="/IP/pages/frozen.php">
+                                        Frozen Food &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/frozen.php">Meat</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/frozen.php">Ice Cream</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/IP/pages/fresh.php">
+                                        Fresh Food &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/fresh.php">Cheese</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/fresh.php">Meat</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/fresh.php">Fruit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/IP/pages/bevs.php">
+                                        Beverges &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/bevs.php">Tea</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/bevs.php">Coffee</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/bevs.php">Choco</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/IP/pages/health.php">
+                                        Home Health &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/health.php">Medicines</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/health.php">Kitchen</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/health.php">Washroom</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/IP/pages/pet.php">
+                                        Pet Food &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/pet.php">Cat</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/pet.php">Dog</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/pet.php">Other</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>

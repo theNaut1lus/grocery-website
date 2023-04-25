@@ -4,7 +4,7 @@
 <?php //include 'sidebar.php'; ?>
 <div class="col-8 d-flex flex-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
     <div class="list-group list-group-horizontal flex-wrap shadow">
-        <h4 class="display-4 page-headings px-4">All products</h4>
+        <h4 class="display-4 page-headings px-4">Fresh products</h4>
         <?php
         foreach ($product_array as $product) {
             // echo $product["product_id"];
