@@ -1,6 +1,5 @@
 <?php include 'cart-select.php'; ?>
 
-<?php include 'cart-update' ?>
 
 <div class="col-md-4 col-lg-3">
     <div class="row">

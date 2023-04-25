@@ -2,8 +2,9 @@
 
 $product_array = array();
 $servername = "localhost";
-$username = "root";
-$password = "";
+// $servername = "awseb-e-mn6s5jqgxe-stack-awsebrdsdatabase-mjdrpcfjfhij.cet59kefgwkn.us-east-1.rds.amazonaws.com";
+$username = "uts";
+$password = "Secret123";
 $dbname = "assignment1";
 // echo $id_pattern;
 // echo $search_pattern;

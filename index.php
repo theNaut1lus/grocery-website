@@ -21,7 +21,8 @@
                     <img src=".' . $product["image_index"] . '" alt="twbs" width="60" height="60" class="flex-shrink-0">
                     <div>
                         <h6 class="mb-0">' . $product["product_name"] . '</h6>
-                        <p class="mb-0 opacity-25"> Quantity: ' . $product["unit_quantity"] . '</p>
+                        <p class="mb-0 opacity-50">' . $product["unit_quantity"] . '</p>
+                        <p class="mb-0 opacity-25">In stock</p>
                     </div>
                     <small class="opacity-50 text-nowrap"> AUD ' . $product["unit_price"] . '</small>
                     <div>
