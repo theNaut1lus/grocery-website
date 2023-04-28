@@ -60,6 +60,20 @@ function addToCart(params) {
   console.log(notification.innerHTML);
 }
 
+function disabledIfEmpty() {
+  let table_body = document.getElementById('table-body');
+  console.log(table_body.innerHTML);
+  if(table_body.innerHTML.includes('<tr>')) {
+    document.getElementById('cart-button').disabled = false;
+  }
+  else {
+    console.log("empty");
+    document.getElementById('cart-button').disabled = true;
+  }
+};
+
+disabledIfEmpty();
+
 // JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'

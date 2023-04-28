@@ -5,9 +5,11 @@ if ($id_pattern) {
     $id_pattern = '';
 }
 
+$count = 0;
+$total = 0;
 $product_array = array();
-$servername = "localhost";
-// $servername = "awseb-e-mn6s5jqgxe-stack-awsebrdsdatabase-mjdrpcfjfhij.cet59kefgwkn.us-east-1.rds.amazonaws.com";
+// $servername = "localhost";
+$servername = "awseb-e-mn6s5jqgxe-stack-awsebrdsdatabase-mjdrpcfjfhij.cet59kefgwkn.us-east-1.rds.amazonaws.com";
 $username = "uts";
 $password = "Secret123";
 $dbname = "assignment1";
@@ -30,6 +32,8 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         // echo "id: " . $row["product_id"] . " - Name: " . $row["product_name"] . " " . $row["unit_price"] . "<br>";
         array_push($product_array, $row);
+        $count++;
+        $total += $row['unit_price'] * $row['quantity'];
     }
 } else {
     echo "0 results";

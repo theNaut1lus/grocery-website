@@ -51,6 +51,9 @@
                                         <li>
                                             <a class="dropdown-item" href="/IP/pages/frozen.php">Ice Cream</a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item disabled" href="/IP/pages/frozen.php">Vegan</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -66,6 +69,9 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="/IP/pages/fresh.php">Fruit</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item disabled" href="/IP/pages/fresh.php">Vegan</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -83,6 +89,9 @@
                                         <li>
                                             <a class="dropdown-item" href="/IP/pages/bevs.php">Choco</a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item disabled" href="/IP/pages/bevs.php">Kosher</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -99,6 +108,9 @@
                                         <li>
                                             <a class="dropdown-item" href="/IP/pages/health.php">Washroom</a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item disabled" href="/IP/pages/health.php">Beauty</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -113,7 +125,10 @@
                                             <a class="dropdown-item" href="/IP/pages/pet.php">Dog</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/IP/pages/pet.php">Other</a>
+                                            <a class="dropdown-item disabled" href="/IP/pages/health.php">Other</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/IP/pages/pet.php">Fish</a>
                                         </li>
                                     </ul>
                                 </li>

@@ -175,7 +175,7 @@
 
                         <hr class="my-4">
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
+                        <button class="w-100 btn btn-primary btn-lg" id="cart-button" type="submit">Place Order</button>
                     </form>
                 </div>
                 <?php include 'cart.php'; ?>

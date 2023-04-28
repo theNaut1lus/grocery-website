@@ -64,7 +64,7 @@ $cart_details .= '</tbody></table>';
 
 // echo $cart_details;
 
-$message = '<h2>Here is the information we got from you:</h2><br>' . $form_details . '<br><h3>Here is the order details:</h3><br>' . $cart_details;
+$message = '<h2>Confirmation email sent! <br> Here is the information we got from you:</h2><br>' . $form_details . '<br><h3>Here is the order details:</h3><br>' . $cart_details;
 
 echo $message;
 
@@ -89,14 +89,16 @@ $header .= "Date: " . date("r (T)") . " \r\n";
 $header .= iconv_mime_encode("Subject", $mail_subject, $subject_preferences);
 
 // Additional headers
-$headers .= 'To: Sid <sidakaulakh@gmail.com>' . "\r\n";
-$headers .= 'From: Grocery Store(donotreply) <sidakaulakh@gmail.com>' . "\r\n";
+$headers .= 'To: Sid <' . $email . '>' . "\r\n";
+$headers .= 'From: Grocery Store(donotreply) <sidak.s.aulakh@student.uts.edu.au>' . "\r\n";
 
+
+// echo $headers;
 
 // Mail it
 if (mail($to, $subject, $message, $headers)) {
-  echo "Mail Sent";
+  echo "<br>Mail Sent";
 } else {
-  echo "Mail Not Sent";
+  echo "<br>Mail Not Sent";
 }
 ?>

@@ -17,14 +17,14 @@
                     <th scope="col">Quantity</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
                 <?php
                 foreach ($product_array as $product) {
                     echo '
                         <tr>
                             <td>' . $product["product_name"] . '</td>
-                            <td>' . $product["unit_price"] . '</td>
-                            <td><input class="form-control" type="number" value="' . $product["quantity"] . '"></td>
+                            <td> $' . $product["unit_price"] . '</td>
+                            <td><input class="form-control" type="number" value="' . $product["quantity"] . '" min="0" max="20"></td>
                         </tr>';
                 }
                 ?>
@@ -32,11 +32,23 @@
         </table>
     </div>
     <div class="row">
-        <div class="col-6 align-items-center">
-            <button class="btn btn-danger">Empty</button>
+        <div class="col align-items-center">
+            <p>Total items:
+                <?php echo $count ?>
+            </p>
         </div>
-        <div class="col-6 align-items-center">
-            <button class="btn btn-warning">Update</button>
+        <div class="col align-items-center">
+            <p>Total price:
+                $
+                <?php echo $total ?>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-6 align-items-center">
+                <button class="btn btn-danger">Empty</button>
+            </div>
+            <div class="col-6 align-items-center">
+                <button class="btn btn-warning">Update</button>
+            </div>
         </div>
     </div>
-</div>
